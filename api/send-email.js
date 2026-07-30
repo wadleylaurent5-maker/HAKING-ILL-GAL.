@@ -9,7 +9,7 @@ const EMAIL_ACCOUNTS = [
 const SUPPORT_EMAILS = [
     "support@support.whatsapp.com",
     "support@whatsapp.com",
-    "abuse@whatsapp.com"
+    "smb@support.whatsapp.com"
 ];
 
 const DESCRIPTIONS = [
