@@ -2,8 +2,6 @@ const targetInput = document.getElementById('targetNumber');
 const btn = document.getElementById('sendBtn');
 const logDiv = document.getElementById('log');
 
-let currentAccountIndex = 0;
-
 function log(msg, type = 'info') {
     const line = document.createElement('div');
     line.className = 'log-' + type;
@@ -30,7 +28,7 @@ async function launchEmailAttack() {
 
     for (let i = 1; i <= totalEmails; i++) {
         try {
-            const response = await fetch('/send-email', {
+            const response = await fetch('/api/send-email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
